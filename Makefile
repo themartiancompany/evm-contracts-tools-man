@@ -53,7 +53,7 @@ build-man:
 	  "build"
 	for _file in $(MAN_FILES); do \
 	  rst2man \
-	    "${_file}" \
+	    "$${_file}" \
 	    "build/$${_file%.rst}"; \
 	done
 
