@@ -72,7 +72,7 @@ install-man:
 
 	$(_INSTALL_DIR) \
 	  "$(MAN_DIR)/man1"
-	if [[ ! -e "build" ]]; then
+	if [[ ! -e "build" ]]; then \
 	  make \
 	    build-man; \
 	fi
