@@ -54,7 +54,7 @@ build-man:
 	for _file in $(MAN_FILES); do \
 	  rst2man \
 	    "$${_file}" \
-	    "build/$${_file%.rst}"; \
+	    "$${PWD}/build/$${_file%.rst}"; \
 	done
 
 install-doc:
