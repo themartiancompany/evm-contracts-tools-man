@@ -78,7 +78,7 @@ install-man:
 	fi
 	for _file in $(MAN_FILES); do \
           $(_INSTALL_FILE) \
-	    "$${PWD}/build/$${_file%.rst}"; \
+	    "$${PWD}/build/$${_file%.rst}" \
 	    "$(MAN_DIR)/man1/$${_file%.rst}"; \
 	done
 
